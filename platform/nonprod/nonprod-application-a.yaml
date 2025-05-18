@@ -4,7 +4,7 @@ metadata:
   name: webapp-a
   namespace: argocd   
 spec:
-  project: team-a
+  project: default
   source:
     repoURL: git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
     targetRevision: main
