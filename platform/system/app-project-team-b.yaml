@@ -8,6 +8,8 @@ spec:
   sourceRepos:
     - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
     - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git/*
+    - https://github.com/ZFlucKZ/nonprod-webapp-manifest
+    - https://github.com/ZFlucKZ/nonprod-webapp-manifest/*
 
   roles:
   - description: Read Only
