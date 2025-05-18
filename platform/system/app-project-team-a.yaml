@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Team A project
   sourceRepos:
-    - https://github.com/ZFlucKZ/nonprod-webapp-manifest/tree/main/dev/webapp/change-color
+    - https://github.com/ZFlucKZ/*
   
   roles:
   - description: Read Only
