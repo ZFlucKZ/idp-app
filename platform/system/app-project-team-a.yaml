@@ -7,6 +7,7 @@ spec:
   description: Team A project
   sourceRepos:
     - https://github.com/ZFlucKZ/*
+    - git@github.com:ZFlucKZ/*
   
   roles:
   - description: Read Only
