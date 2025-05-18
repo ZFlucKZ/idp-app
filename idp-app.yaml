@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: idp-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:ZFlucKZ/nonprod-k8s-config.git
+    targetRevision: main
+    path: platform
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      enabled: true
+      prune: true
+      allowEmpty: true
+      selfHeal: true
