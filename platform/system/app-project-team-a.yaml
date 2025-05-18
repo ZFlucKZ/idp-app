@@ -5,6 +5,13 @@ metadata:
   namespace: argocd
 spec:
   description: Team A project
+  destinations:
+  - name: '*'
+    namespace: '*'
+    server: '*'  
+  clusterResourceWhitelist:
+  - group: ""
+    kind: Namespace
   sourceRepos:
     - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
     - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git/*
