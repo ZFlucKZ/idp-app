@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:ZFlucKZ/nonprod-k8s-config.git
+    repoURL: git@github.com:ZFlucKZ/idp-app.git
     targetRevision: main
     path: platform
     directory:
