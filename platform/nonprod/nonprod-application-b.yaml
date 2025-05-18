@@ -4,11 +4,11 @@ metadata:
   name: webapp
   namespace: argocd
 spec:
-  project: default
+  project: team-b
   source:
     repoURL: git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
     targetRevision: main
-    path: dev/webapp
+    path: dev/webapp/set-color
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

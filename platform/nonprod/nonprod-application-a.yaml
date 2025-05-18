@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: webapp
+  namespace: argocd
+spec:
+  project: team-a
+  source:
+    repoURL: git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
+    targetRevision: main
+    path: dev/webapp/change-color
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+      selfHeal: true

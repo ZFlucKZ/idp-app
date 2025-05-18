@@ -1,0 +1,9 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: infrakai
+  namespace: argocd
+spec:
+  description: Infrastructure project
+  sourceRepos:
+    - https://github.com/ZFlucKZ/*
