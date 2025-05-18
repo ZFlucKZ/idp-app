@@ -6,8 +6,8 @@ metadata:
 spec:
   description: Team B project
   sourceRepos:
-    - https://github.com/ZFlucKZ/*
-    - git@github.com:ZFlucKZ/*
+    - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git
+    - git@github.com:ZFlucKZ/nonprod-webapp-manifest.git/*
 
   roles:
   - description: Read Only
